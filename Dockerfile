@@ -1,5 +1,4 @@
-ARG SCALEWAY_VER=latest
-FROM scaleway/cli:${SCALEWAY_VER} as binary
+FROM scaleway/cli:latest as binary
 
 FROM alpine:latest
 RUN apk add -qU ca-certificates

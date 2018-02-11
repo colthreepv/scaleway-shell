@@ -1,11 +1,17 @@
 scaleway-shell
 ==============
+[![Docker Automated build](https://img.shields.io/docker/automated/colthreepv/scaleway-shell.svg?style=for-the-badge&maxAge=3600)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/colthreepv/scaleway-shell.svg?style=for-the-badge&maxAge=600)]()  
 
-This docker container let's you execute a scaleway container specifying user/password via environment variables.
+This docker image let's you execute a Scaleway CLI specifying user/password via environment variables.
 
-Usage:  
+**Automatically updated when `scaleway/cli` changes**
 
-`docker run --rm -it -e SCALEWAY_ORGANIZATION=xxxxxxx-xxxxx-... -e SCALEWAY_TOKEN=yyyyyyyy-yyyyyy... colthreepv/scaleway-shell`
+# Example usage
+Passing username and password via environment variables
+```shell
+docker run --rm -it -e SCALEWAY_ORGANIZATION=xxxxxxx-xxxxx-... -e SCALEWAY_TOKEN=yyyyyyyy-yyyyyy... colthreepv/scaleway-shell`
+```
 
 You can find the scaleway organization in the [credentials page](https://cloud.scaleway.com/#/credentials)
 
